@@ -26,6 +26,9 @@ body {
     box-shadow: 0 0 20px rgba(128, 0, 128, 0.7); /* фиолетовое свичение */
     background: linear-gradient(135deg, #800080, #d580ff); /* фиолетовый градиент */
     cursor: default;
+    
+    animation: pulse 3s infinite;
+
 }
 
 /* Позиции */
@@ -33,6 +36,7 @@ body {
     top: 50%;
     left: 13.7%;
     transform: translate(-50%, -50%);
+    
 }
 
 .neuron.output {
@@ -59,5 +63,13 @@ body {
     top: -20%;
     left: 50%;
     transform: translateX(-50%);
+    color: #fff;
     font-weight: bold;
+    animation: pulse 3s infinite;
 }
+
+@keyframes pulse {
+        0% {
+            text-shadow: 0 0 5px #d580ff, 0 0 10px #d580ff, 0 0 20px #d580ff;
+        }
+    }
